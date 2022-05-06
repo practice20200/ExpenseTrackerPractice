@@ -59,11 +59,11 @@
 		B301A5272824F23B00558FB8 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
-				B301A53F2824FA2B00558FB8 /* TransactionRow.swift */,
 				B301A53C2824F8C300558FB8 /* Resources */,
 				B301A53B2824F8B200558FB8 /* Utils */,
 				B301A53A2824F8A600558FB8 /* Models */,
 				B301A5282824F23B00558FB8 /* ExpenseTrackerApp.swift */,
+				B301A53F2824FA2B00558FB8 /* TransactionRow.swift */,
 				B301A52A2824F23B00558FB8 /* ContentView.swift */,
 				B301A52E2824F23C00558FB8 /* Preview Content */,
 				B301A53D2824F95100558FB8 /* PreViewData.swift */,
