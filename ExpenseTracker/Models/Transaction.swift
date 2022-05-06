@@ -20,7 +20,7 @@ struct Transaction: Identifiable {
         date.dateParsed()
     }
     
-    var signedAmount Double {
+    var signedAmount: Double {
         return type == TransactionType.credit.rawValue ? amount: -amount
     }
 }
