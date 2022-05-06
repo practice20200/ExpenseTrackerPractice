@@ -1,7 +1,7 @@
 
 
 import Foundation
-struct Transaction: Identifiable {
+struct Transaction: Identifiable, Decodable {
     let id: Int
     let date: String
     let institution: String
