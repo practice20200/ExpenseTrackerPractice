@@ -13,6 +13,8 @@
 		B301A5302824F23C00558FB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B301A52F2824F23C00558FB8 /* Preview Assets.xcassets */; };
 		B301A5372824F45200558FB8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A5362824F45200558FB8 /* Extensions.swift */; };
 		B301A5392824F73E00558FB8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A5382824F73E00558FB8 /* Transaction.swift */; };
+		B301A53E2824F95100558FB8 /* PreViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A53D2824F95100558FB8 /* PreViewData.swift */; };
+		B301A5402824FA2B00558FB8 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A53F2824FA2B00558FB8 /* TransactionRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B301A52F2824F23C00558FB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B301A5362824F45200558FB8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B301A5382824F73E00558FB8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B301A53D2824F95100558FB8 /* PreViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewData.swift; sourceTree = "<group>"; };
+		B301A53F2824FA2B00558FB8 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		B301A5272824F23B00558FB8 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B301A53F2824FA2B00558FB8 /* TransactionRow.swift */,
 				B301A53C2824F8C300558FB8 /* Resources */,
 				B301A53B2824F8B200558FB8 /* Utils */,
 				B301A53A2824F8A600558FB8 /* Models */,
 				B301A5282824F23B00558FB8 /* ExpenseTrackerApp.swift */,
 				B301A52A2824F23B00558FB8 /* ContentView.swift */,
 				B301A52E2824F23C00558FB8 /* Preview Content */,
+				B301A53D2824F95100558FB8 /* PreViewData.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -168,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B301A52B2824F23B00558FB8 /* ContentView.swift in Sources */,
+				B301A53E2824F95100558FB8 /* PreViewData.swift in Sources */,
 				B301A5392824F73E00558FB8 /* Transaction.swift in Sources */,
+				B301A5402824FA2B00558FB8 /* TransactionRow.swift in Sources */,
 				B301A5372824F45200558FB8 /* Extensions.swift in Sources */,
 				B301A5292824F23B00558FB8 /* ExpenseTrackerApp.swift in Sources */,
 			);
