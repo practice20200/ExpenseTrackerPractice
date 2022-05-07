@@ -1,6 +1,8 @@
 
 
 import Foundation
+import SwiftUIFontIcon
+
 struct Transaction: Identifiable, Decodable, Hashable {
     let id: Int
     let date: String
@@ -16,6 +18,13 @@ struct Transaction: Identifiable, Decodable, Hashable {
     var isExpense: Bool
     var isEdited: Bool
     
+    var icon: FontAwesomeCode {
+        if let category = Category.all.first(where: {$0.id == categoryId}){
+            return category.icon
+        }
+        return .question
+    }
+    
     var dateParsed: Date{
         date.dateParsed()
     }
@@ -29,4 +38,50 @@ struct Transaction: Identifiable, Decodable, Hashable {
 enum TransactionType: String{
     case debit = "debit"
     case credit = "credit"
+}
+
+struct Category {
+    let id: Int
+    let name: String
+    let icon: FontAwesomeCode
+    var mainCatrgoryId: Int?
+}
+
+extension Category {
+    //MARK: categories
+    static var autoAndTransport = Category(id: 1, name: "Auto & Transport", icon: .car_alt)
+    static var billsAndUtilities = Category(id: 2, name: "Bills & Utilities", icon: .file_invoice_dollar)
+    static var entertainment = Category(id: 3, name: "Entertainment", icon: .car_alt)
+    static var feesAndCharges = Category(id: 4, name: "Fees & Charges", icon: .hand_holding_usd)
+    static var foodAndDining = Category(id: 5, name: "Food & Dining", icon: .hamburger)
+    static let home = Category(id: 6, name: "Home", icon: .home)
+    static let income = Category(id: 7, name: "Income", icon: .dollar_sign)
+    static let shopping = Category(id: 8, name: "Shopping", icon: .shopping_cart)
+    static let transfer = Category(id: 9, name: "Transfer", icon: .exchange_alt)
+    
+    //MARK:subCategories
+    static let publicTransportation = Category(id: 101, name: "Public & Transportation", icon: .bus, mainCatrgoryId: 1)
+    static let taxi = Category(id: 2, name: "Taxi", icon: .taxi,mainCatrgoryId: 1)
+}
+
+extension Category{
+    static let categories: [Category] = [
+        .autoAndTransport,
+        .billsAndUtilities,
+        .entertainment,
+        .feesAndCharges,
+        .foodAndDining,
+        .home,
+        .income,
+        .shopping,
+        .transfer
+    ]
+    
+    static let subCategories: [Category] = [
+        .publicTransportation,
+        .taxi
+    ]
+    
+    static let all: [Category] = categories + subCategories
+    
 }
