@@ -59,9 +59,16 @@ extension Category {
     static let shopping = Category(id: 8, name: "Shopping", icon: .shopping_cart)
     static let transfer = Category(id: 9, name: "Transfer", icon: .exchange_alt)
     
-    //MARK:subCategories
+    //MARK: subCategories
     static let publicTransportation = Category(id: 101, name: "Public & Transportation", icon: .bus, mainCatrgoryId: 1)
-    static let taxi = Category(id: 2, name: "Taxi", icon: .taxi,mainCatrgoryId: 1)
+    static let taxi = Category(id: 102, name: "Taxi", icon: .taxi,mainCatrgoryId: 1)
+    static let mobilePhone = Category(id: 201, name: "mobile Phone", icon: .mobile_alt,mainCatrgoryId: 2)
+    static let moviesAndDVDs = Category(id: 301, name: "Movies & DVDs", icon: .taxi,mainCatrgoryId: 3)
+    static let bankFee = Category(id: 401, name: "Bank Fee", icon: .hand_holding_usd, mainCatrgoryId: 4)
+    static let financeCharge = Category(id: 402, name: "Finance Charge", icon: .taxi,mainCatrgoryId: 4)
+    static let groceries = Category(id: 501, name: "Grocieries", icon: .taxi,mainCatrgoryId: 5)
+    static let restaurants = Category(id: 502, name: "Finance Charge", icon: .taxi,mainCatrgoryId: 5)
+    
 }
 
 extension Category{
