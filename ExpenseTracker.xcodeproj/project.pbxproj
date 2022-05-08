@@ -15,7 +15,7 @@
 		B301A5392824F73E00558FB8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A5382824F73E00558FB8 /* Transaction.swift */; };
 		B301A53E2824F95100558FB8 /* PreViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A53D2824F95100558FB8 /* PreViewData.swift */; };
 		B301A5402824FA2B00558FB8 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301A53F2824FA2B00558FB8 /* TransactionRow.swift */; };
-		B366034E28277FBD009EAC7F /* transactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366034D28277FBD009EAC7F /* transactionList.swift */; };
+		B366034E28277FBD009EAC7F /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366034D28277FBD009EAC7F /* TransactionList.swift */; };
 		B3DDF76128259F4F00B78146 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = B3DDF76028259F4F00B78146 /* SwiftUIFontIcon */; };
 		B3DDF7642825A1BE00B78146 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDF7632825A1BE00B78146 /* TransactionListViewModel.swift */; };
 		B3DDF766282616EA00B78146 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDF765282616EA00B78146 /* RecentTransactionList.swift */; };
@@ -31,7 +31,7 @@
 		B301A5382824F73E00558FB8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		B301A53D2824F95100558FB8 /* PreViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewData.swift; sourceTree = "<group>"; };
 		B301A53F2824FA2B00558FB8 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
-		B366034D28277FBD009EAC7F /* transactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionList.swift; sourceTree = "<group>"; };
+		B366034D28277FBD009EAC7F /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		B3DDF7632825A1BE00B78146 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 		B3DDF765282616EA00B78146 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 				B301A52E2824F23C00558FB8 /* Preview Content */,
 				B301A53D2824F95100558FB8 /* PreViewData.swift */,
 				B3DDF765282616EA00B78146 /* RecentTransactionList.swift */,
-				B366034D28277FBD009EAC7F /* transactionList.swift */,
+				B366034D28277FBD009EAC7F /* TransactionList.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B301A52B2824F23B00558FB8 /* ContentView.swift in Sources */,
-				B366034E28277FBD009EAC7F /* transactionList.swift in Sources */,
+				B366034E28277FBD009EAC7F /* TransactionList.swift in Sources */,
 				B3DDF766282616EA00B78146 /* RecentTransactionList.swift in Sources */,
 				B301A53E2824F95100558FB8 /* PreViewData.swift in Sources */,
 				B301A5392824F73E00558FB8 /* Transaction.swift in Sources */,
