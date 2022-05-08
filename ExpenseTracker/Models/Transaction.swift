@@ -72,7 +72,11 @@ extension Category {
     static let financeCharge = Category(id: 402, name: "Finance Charge", icon: .taxi,mainCatrgoryId: 4)
     static let groceries = Category(id: 501, name: "Grocieries", icon: .taxi,mainCatrgoryId: 5)
     static let restaurants = Category(id: 502, name: "Finance Charge", icon: .taxi,mainCatrgoryId: 5)
-    
+    static let rent = Category(id: 601, name: "Rent", icon: .house_user, mainCatrgoryId: 6)
+    static let homeSupplies = Category(id: 602, name: "Home Supplies", icon: .taxi,mainCatrgoryId: 6)
+    static let paychequw = Category(id: 701, name: "Paycheque", icon: .taxi,mainCatrgoryId: 7)
+    static let software = Category(id: 801, name: "Software", icon: .taxi,mainCatrgoryId: 8)
+    static let creditCardPayment = Category(id: 901, name: "Credit Card Payment", icon: .taxi,mainCatrgoryId: 9)
 }
 
 extension Category{
