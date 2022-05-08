@@ -12,7 +12,7 @@ import SwiftUICharts
 struct ContentView: View {
     
     var body: some View {
-        var demoData: [Double] = [8, 2, 4, 6, 12, 9, 2]
+        let demoData: [Double] = [8, 2, 4, 6, 12, 9, 2]
         NavigationView{
             ScrollView{
                 VStack(alignment: .leading, spacing: 24) {
@@ -23,12 +23,15 @@ struct ContentView: View {
                     
                     //MARK: Chart
                     CardView {
-                        LineChart()
+                        VStack{
+                            ChartLabel("$900", type: .title)
+                            LineChart()
+                        }
+                        .background(Color.systemBackground)
                     }
                     .data(demoData)
                     .chartStyle(ChartStyle(backgroundColor: Color.systemBackground, foregroundColor: ColorGradient(Color.icon.opacity(0.4), Color.icon)))
-
-                .frame(height: 300)
+                    .frame(height: 300)
                     
                     //MARK: TransactionList
                     RecentTransactionList()
