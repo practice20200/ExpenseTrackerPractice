@@ -94,7 +94,18 @@ extension Category{
     
     static let subCategories: [Category] = [
         .publicTransportation,
-        .taxi
+        .taxi,
+        .mobilePhone,
+        .moviesAndDVDs,
+        .bankFee,
+        .financeCharge,
+        .groceries,
+        .restaurants,
+        .rent,
+        .homeSupplies,
+        .paychequw,
+        .software,
+        .creditCardPayment
     ]
     
     static let all: [Category] = categories + subCategories

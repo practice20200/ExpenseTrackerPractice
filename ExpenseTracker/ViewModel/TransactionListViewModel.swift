@@ -16,14 +16,15 @@ final class TransactionListViewModel: ObservableObject {
     }
     
     func getTransactions(){
-        guard let url = URL(string: "hettps://designcode.io/data/transacations.json") else {
+        guard let url = URL(string: "https://designcode.io/data/transacations.json") else {
             print("Invalid URL")
             return
         }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .tryMap { (data,response) -> Data in
-                guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            .tryMap { (data, response) -> Data in
+                guard let httpResponse = response as? HTTPURLResponse ,httpResponse.statusCode == 200 else {
+                    print("############:\(response)")
                     dump(response)
                     throw URLError(.badServerResponse)
                 }

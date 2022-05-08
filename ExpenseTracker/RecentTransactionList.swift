@@ -57,7 +57,6 @@ struct RecentTransactionList_Previews: PreviewProvider{
                 .preferredColorScheme(.dark)
         }
         
-//        RecentTransactionList()
             .environmentObject(transactionListVM)
     }
 }
